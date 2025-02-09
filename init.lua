@@ -4,7 +4,7 @@ local Plug = vim.fn["plug#"]
 vim.call("plug#begin")
 
 Plug("nvim-treesitter/nvim-treesitter", { ["do"] = ":TSUpdate" })
-Plug("rose-pine/neovim")
+Plug("rebelot/kanagawa.nvim")
 Plug("williamboman/mason.nvim")
 Plug("neovim/nvim-lspconfig")
 Plug("williamboman/mason-lspconfig.nvim")
@@ -20,7 +20,8 @@ Plug("windwp/nvim-ts-autotag")
 
 vim.call("plug#end")
 
+require("command")
 require("remap")
 require("set")
 
-vim.cmd("colorscheme rose-pine")
+vim.cmd("colorscheme kanagawa")

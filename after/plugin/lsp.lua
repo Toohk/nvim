@@ -33,3 +33,17 @@ require("lspconfig").lua_ls.setup({
 		},
 	},
 })
+
+require("lspconfig").clangd.setup({})
+require("lspconfig").intelephense.setup({
+    settings = {
+    intelephense = {
+      stubs = {
+        "wordpress", "wordpress-globals", "wp-cli"
+      },
+      environment = {
+        includePaths = { "~/.composer/vendor/php-stubs/wordpress-stubs" }
+      }
+    }
+  }
+})
