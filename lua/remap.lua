@@ -35,3 +35,6 @@ end)
 vim.keymap.set("n", "<C-S-N>", function()
 	harpoon:list():next()
 end)
+
+vim.keymap.set("n", "<leader>r", ":RunMain<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>c", ":CompileRunMain<CR>", { noremap = true, silent = true })
